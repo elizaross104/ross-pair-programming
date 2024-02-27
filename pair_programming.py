@@ -2,7 +2,8 @@
 # Feb. 22, 2024
 # Pair programming assignment
 
-# Editor: 
+# Editor: Anna Melega
+# Everything looks really good, easy to follow with all of the comments. 
 
 
 # Write a function that takes two values (feet and inches) and converts to meters
@@ -14,3 +15,10 @@ def convert_meters(array): #input should be array with format [feet, inches]
     total_feet = feet + decimal #adds the value for feet to the value of inches converted to feet to find total feet
     meters = total_feet / 3.281 #converts total feet to meters, 3.281 found from online calculator
     return meters #returns number of meters
+
+def test_convert_meters():
+    assert convert_meters([0, 0]) == 0
+    assert convert_meters([3, 3.37]) == 1
+    print("Passed tests")
+    
+test_convert_meters()
